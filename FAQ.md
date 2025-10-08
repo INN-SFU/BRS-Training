@@ -29,4 +29,4 @@ Fir can experience network connectivity issues from time to time. You can check 
 
 ### How do I copy specific subject folders, sub-folders, or specific files to my scratch directory?
 
-If you want to copy specific **subject folders** and/or **sub-folders** (like `sub-BRS0001/ses-1/meg/`) from `/project/ctb-rmcintos/data-sets/BRS` to your own `scratch` directory, you can use an rsync script and a list of subjects that you're interested in. See the page on [copy_subs](tools/copy_subs.md).
+If you want to copy specific **subject folders** and/or **sub-folders** (like `sub-BRS0001/ses-1/meg/`) from `/project/ctb-rmcintos/data-sets/BRS` to your own `scratch` directory, you can use an rsync script and a list of subjects that you're interested in. See the page on [copy_subs](tools/copy_subs.md). Please also see the [Training Session Notebook](Training_Session_Notebook.ipynb).
