@@ -26,26 +26,18 @@ Below are examples you can copy and modify depending on what you need.
 ```bash
 while read subj; do
 mkdir -p ~/scratch/BRS
-rsync -av /project/ctb-rmcintos/data-sets/BRS/${subj} ~/scratch/BRS/
+rsync -axH --no-g --no-p --chmod=u=rw /project/ctb-rmcintos/data-sets/BRS/${subj} ~/scratch/BRS/
 done < subjects.txt
 ```
 This reads in subjects of interest from your subject list and copies each subject folder (including all sessions, sub-directories, and files) to `~/scratch/BRS`.
 
 
-#### **Option B – Copy only a specific sub-folder for each subject (e.g., ses-1/meg/)**
+#### **Option B – Copy only a specific sub-folder for each subject (e.g., ses-1/eeg/)**
 ```bash
 while read subj; do
-mkdir -p ~/scratch/BRS
-rsync -av /project/ctb-rmcintos/data-sets/BRS/${subj}/ses-1/meg ~/scratch/BRS/${subj}/ses-1/
+mkdir -p ~/scratch/BRS/${subj}/ses-1
+rsync -axH --no-g --no-p --chmod=u=rw /project/ctb-rmcintos/data-sets/BRS/${subj}/ses-1/eeg ~/scratch/BRS/${subj}/ses-1/
 done < subjects.txt
 ```
-This copies only the `/meg` sub-folder for each subject, preserving the folder structure.
+This copies only the `/eeg` sub-folder for each subject.
 
----
-
-**Tip:**
-If you only want certain file types (e.g., .nii.gz), you can add filters to the `rsync` command like `--include='*.nii.gz' --exclude='*'` to copy only matching files.
-For instance:
-```
-rsync -av --include='*.nii.gz' --exclude='*' /project/ctb-rmcintos/data-sets/BRS/${subj}/ses-1/meg ~/scratch/BRS/${subj}/ses-1/
-```
