@@ -1,7 +1,7 @@
-# BRS_Training_Dev
+# BRS Training
 
 
-This is the repository for the BRS Training Sessions. You can find the notebook for [Week 2: Computing on Cedar](Training_Session_Notebook.ipynb). 
+This is the repository for the BRS Training Sessions. You can find the notebook for [Week 2: Computing on Fir](Training_Session_Notebook.ipynb). 
 
 Frequently Asked Questions can be found [here](FAQ.md).
 
@@ -15,12 +15,12 @@ You can find PDFs of slides for each week's content under [PPT_slides](PPT_slide
 
 ### Cloning this repository
 
-1. Log into Cedar
+1. Log into Fir
 2. If it's your first time:
     - `cd ~/scratch`
-    - `git clone https://github.com/INN-SFU/BRS_Training.git`
+    - `git clone https://github.com/INN-SFU/BRS-Training.git`
 3. If you've cloned the repository before:
-    - `cd ~/scratch/BRS_Training`
+    - `cd ~/scratch/BRS-Training`
     - `git pull`
 
 
@@ -28,7 +28,7 @@ You can find PDFs of slides for each week's content under [PPT_slides](PPT_slide
 
 ### JupyterHub
 
-Link to JupyterHub is [here](https://jupyterhub.cedar.alliancecan.ca/).
+Link to JupyterHub is [here](https://jupyterhub.fir.alliancecan.ca/).
 
 
 <br>
